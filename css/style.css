@@ -158,7 +158,6 @@ section{
 /*********About*******/
 .about{
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 .about-text{
   color: var(--text-color);
@@ -167,6 +166,9 @@ section{
   line-height: 1.5;
   text-align: justify;
   flex: 1;
+}
+.about-text p{
+  margin-bottom: 1rem;
 }
 .about-img{
   display: flex;
