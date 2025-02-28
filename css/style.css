@@ -10,25 +10,28 @@
 
 /****** Variables ******/
 :root{
-  --primary: #ef8005;
+  --primary: #f3820a;
   --secondary: #17171f;
   --muted: #17171fcf;
   --white: #ffff;
   --background: var(--secondary);
   --text-color: var(--white);
   --text-color-secondary: var(--secondary);
-  --text-color-muted: var(--muted)
+  --text-color-muted: var(--muted);
   --button-primary: var(--primary);
   --button-secondary: var(--secondary);
 
   --font-primary: 'Poppins', sans-serif;
-  --fs-100: 1.2rem;
-  --fs-200: 1.4rem;
-  --fs-300: 1.6rem;
-  --fs-400: 1.8rem;
-  --fs-500: 2rem;
-  --fs-600: 2.2rem;
-  --fs-100: 300;
+  --fs-100: 0.6rem;
+  --fs-200: 0.7rem;
+  --fs-300: 1rem;
+  --fs-400: 1.3rem;
+  --fs-500: 1.5rem;
+  --fs-600: 1.8rem;
+  --fs-700: 2rem;
+  --fs-800: 3rem;
+
+  --fw-100: 300;
   --fw-200: 400;
   --fw-300: 500;
   --fw-400: 600;
@@ -80,6 +83,8 @@
   border-radius: 0.5rem;
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
+  font-size: var(--fs-200);
 }
 .btn-primary{
   background-color: var(--button-primary);
@@ -93,6 +98,7 @@
 /**********Tag********/
 body{
   background-color: var(--background);
+  font-family: var(--font-primary);
 }
 a{
   text-decoration: none;
@@ -111,4 +117,25 @@ header > nav > ul{
 }
 header > nav{
   padding: 1rem;
+}
+
+/*******Hero*******/
+.hero{
+  gap: 1rem;
+  align-items: center;
+}
+.hero-left, .hero-right{
+  flex: 1;
+  color: var(--text-color);
+}
+.hero-right h2{
+  font-size: var(--fs-500);
+  font-weight: var(--fw-500);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.hero-right p{
+  font-size: var(--fs-200);
+  font-weight: var(--fw-100);
+  margin-bottom: 0.4rem;
 }

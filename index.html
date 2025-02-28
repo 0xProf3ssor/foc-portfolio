@@ -3,6 +3,7 @@
   <head>
     <title>My First Web Page</title>
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
@@ -18,8 +19,16 @@
       <!-- Hero Section -->
       <section id="hero">
         <div class="container">
-          <h1>Welcome to My First Web Page</h1>
-          <p>This is a simple web page created using HTML and CSS.</p>
+          <div class="d-flex hero">
+            <div class="hero-left">
+              <img src="./images/hero.png" alt="Hero Image" class="w-100">
+            </div>
+            <div class="hero-right">
+              <h2>Shahedul Islam</h2>
+              <p>Machine Learning Engineer</p>
+              <a href="download.html" class="btn btn-primary">Download CV</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
