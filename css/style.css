@@ -23,9 +23,9 @@
 
   --font-primary: 'Poppins', sans-serif;
   --fs-100: clamp(0.5rem, 10vw, 1rem);
-  --fs-200: clamp(0.6rem, 3vw, 1rem);
-  --fs-300: clamp(1rem, 10vw, 1.5rem);
-  --fs-400: clamp(1.2rem, 10vw, 1.8rem);
+  --fs-200: clamp(0.6rem, 3vw, 1.2rem);
+  --fs-300: clamp(0.6rem, 3vw, 1rem);
+  --fs-400: clamp(1.6rem, 4vw, 2.5rem);
   --fs-500: clamp(1.5rem, 7vw, 8rem);
   --fs-600: clamp(1.8rem, 10vw, 2.5rem);
   --fs-700: clamp(2rem, 10vw, 3rem);
@@ -41,8 +41,14 @@
 /*********Global********/
 .container{
   max-width: 1150px;
-  min-width: 100%;
+  width: 100%;
+  margin: auto;
   padding: 0 0.5rem;
+}
+@media screen and (max-width: 1150px) {
+  .container{
+    padding: 0 1rem;
+  }
 }
 .text-center{
   text-align: center;
@@ -76,6 +82,12 @@
 }
 .h-100{
   height: 100%;
+}
+.section-heading{
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-300);
 }
 .btn{
   padding: 0.5rem 1rem;
@@ -118,10 +130,13 @@ header > nav > ul{
 header > nav{
   padding: 1rem;
 }
+section{
+  padding-bottom: 6rem;
+}
 
 /*******Hero*******/
 .hero{
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 .hero-left, .hero-right{
@@ -138,4 +153,37 @@ header > nav{
   font-size: var(--fs-200);
   font-weight: var(--fw-100);
   margin-bottom: 0.4rem;
+}
+
+/*********About*******/
+.about{
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.about-text{
+  color: var(--text-color);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-200);
+  line-height: 1.5;
+  text-align: justify;
+  flex: 1;
+}
+.about-img{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.about-img img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+@media screen and (max-width: 768px){
+  .about{
+    flex-direction: column-reverse;
+  }
+  .about-text{
+    margin-top: 1rem;
+  }
+  
 }
