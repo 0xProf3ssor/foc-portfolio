@@ -280,3 +280,8 @@ section{
 .service-card:hover{
   transform: translateY(-5px);
 }
+
+/*********Contact*******/
+.contact-form-left, .contact-form-right{
+  flex-direction: column;
+}
