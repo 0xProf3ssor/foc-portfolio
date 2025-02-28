@@ -22,6 +22,7 @@
   --button-secondary: var(--secondary);
 
   --font-primary: 'Poppins', sans-serif;
+
   --fs-100: clamp(0.5rem, 10vw, 1rem);
   --fs-200: clamp(0.6rem, 3vw, 1.2rem);
   --fs-300: clamp(1rem, 10vw, 1.5rem);
