@@ -68,11 +68,26 @@
 .align-items-center{
   align-items: center;
 }
-w-100{
+.w-100{
   width: 100%;
 }
-h-100{
+.h-100{
   height: 100%;
+}
+.btn{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary{
+  background-color: var(--button-primary);
+  color: var(--white);
+}
+.btn-secondary{
+  background-color: var(--button-secondary);
+  color: var(--white);
 }
 
 /**********Tag********/
