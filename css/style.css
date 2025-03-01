@@ -22,7 +22,7 @@
   --button-secondary: var(--secondary);
 
   --font-primary: 'Poppins', sans-serif;
-  --fs-100: clamp(0.5rem, 10vw, 1rem);
+  --fs-100: clamp(0.5rem, 3vw, 1rem);
   --fs-200: clamp(0.6rem, 3vw, 1.2rem);
   --fs-300: clamp(0.6rem, 3vw, 1rem);
   --fs-400: clamp(1.6rem, 4vw, 2.5rem);
@@ -96,7 +96,7 @@
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  font-size: var(--fs-200);
+  font-size: var(--fs-100);
 }
 .btn-primary{
   background-color: var(--button-primary);
@@ -282,6 +282,40 @@ section{
 }
 
 /*********Contact*******/
+.contact-form{
+  width: 80%;
+  margin: auto;
+}
 .contact-form-left, .contact-form-right{
   flex-direction: column;
+  flex: 1;
+  padding: 0 1rem;
+}
+.contact-form input, .contact-form textarea{
+  background: var(--secondary);
+  color: var(--text-color);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+  color: var(--text-color);
+}
+.contact-form-right textarea{
+  height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contact-form{
+    flex-direction: column;
+  }
 }
